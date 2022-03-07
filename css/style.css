@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+nav ul li{
+    width:calc((100%/7));
+    line-height: 2em;
+    text-decoration: none;
+    background-color: #f9d0cd;
+    margin-left: 0;
+    border-right:1px solid #e3b2af;
+
+}
+nav ul :last-child{
+    border-right: none;
+}
+ul li a{
+    color: #797C80;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+header{
+    text-align: center;
+    color: #797C80;
+    
+    
+}
+header h1{
+    border-bottom: 0.1em solid gray;
+    width: 50%;
+    margin: 0 auto;
+}
+.post-header{
+    background-image: url(../images/images.jpg),linear-gradient(to left,rgba(255, 255, 255, 0.51),rgba(255, 255, 255, 0.51));
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    height: 20em;
+    line-height: 10em;
+}
+article{
+    width: 75%;
+    text-align: center;
+    align-self: center;
+    padding:2em 0 0 0;
+    color: #4C2627;
+    background-color: #D2E1E6;
+    
+}
+article div{
+    padding-bottom: 5em;
+    margin: 0 5em;
+    border-bottom: 1px solid #4C2627;
+}
+article :last-child{
+    border: none;
+}
+article a{
+    
+    border-radius: 1em;
+    line-height: 3em;
+    padding: 1em;
+    font-weight: 600;
+    background-color: #f9d0cd;
+    color: #797C80;
+    text-decoration: none;
+    position: relative;
+    top: 3em;
+}
+article a:after{
+    content: ' >';
+}
+.ourstaff ,.enviroment{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: center;
+    padding-bottom: 0;
+    
+
+}
+.enviroment .content{
+    order: 2;
+    border-bottom: none;
+}
+.enviroment .photos{
+    align-items: baseline;
+    
+}
+.ourstaff .content{
+    align-self: center;
+    border-bottom: none;
+}
+.content, .photos{
+    width: 40%;
+    margin: 1em;
+
+
+}
+.photos{
+    padding-bottom: 0;
+    flex-shrink: 3;
+    height: 50%;
+}
+.photos img{
+    width: 100%;
+    line-height: 100%;
+
+
+
+}
+.pricingdiv{
+    border-bottom: none;
+    width: 60%;
+    padding-bottom: 1em;
+}
+.pricing{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+    align-items: baseline;
+    padding-bottom: 0;
+
+
+}
+.pricing a{
+    width: 30%;
+    height: fit-content;
+}
+li:hover{
+    background-color: #E5AB97;
+    cursor:pointer;
+}
+a:hover{
+    background-color: #E5AB97;
+}
